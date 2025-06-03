@@ -14,6 +14,7 @@ const Booking = () => {
     "Photoshoot Makeup",
     "Creative Makeup",
     "Party & Event Glam",
+    "Hair Locking",
     "Collabs & PR",
   ];
 
