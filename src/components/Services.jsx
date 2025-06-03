@@ -5,6 +5,7 @@ import {
   FaPalette,
   FaBirthdayCake,
   FaHandshake,
+  FaLock
 } from "react-icons/fa";
 
 const services = [
@@ -28,6 +29,12 @@ const services = [
     title: "Party & Event Glam",
     desc: "Perfect looks for birthdays, dinners, or special events.",
   },
+  {
+    icon: <FaLock />,
+    title: "Hair Locking",
+    desc: "Get neat, long-lasting hair locks with a touch of style and professionalism.",
+  },
+
   {
     icon: <FaHandshake />,
     title: "Collabs & PR",
