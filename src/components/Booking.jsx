@@ -39,7 +39,7 @@ const Booking = () => {
             </div>
             <div className="flex items-center gap-3">
               <FaPhone className="text-pink-400" />
-              <span>+234 803 200 3504</span>
+              <span>+234 803 542 4970</span>
             </div>
             <div className="flex items-center gap-3">
               <FaEnvelope className="text-pink-400" />
@@ -81,7 +81,7 @@ const Booking = () => {
             const phone = e.target.phone.value;
             const message = e.target.message.value;
 
-            const whatsappLink = `https://wa.me/2348032003504?text=Hello%2C%20I'm%20${encodeURIComponent(
+            const whatsappLink = `https://wa.me/2348035424970?text=Hello%2C%20I'm%20${encodeURIComponent(
               name
             )}.%0AService%3A%20${encodeURIComponent(
               service
