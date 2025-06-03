@@ -4,32 +4,63 @@ import image2 from "../assets/IMG-20250602-WA0007.jpg"
 import image3 from "../assets/IMG-20250602-WA0009.jpg"
 import image4 from "../assets/IMG-20250602-WA0010.jpg"
 import image5 from "../assets/IMG-20250602-WA0011.jpg"
+import image6 from "../assets/IMG-20250603-WA0011.jpg"
+import image7 from "../assets/IMG-20250603-WA0002.jpg"
+import image8 from "../assets/IMG-20250603-WA0001.jpg"
+import image9 from "../assets/IMG-20250603-WA0004.jpg"
+import image10 from "../assets/IMG-20250603-WA0008.jpg"
+import image11 from "../assets/IMG-20250603-WA0013.jpg"
+import image12 from "../assets/IMG-20250603-WA0014.jpg"
 
 const portfolioItems = [
   {
     id: 1,
     image:image1,
-    title: "Editorial Style",
   },
   {
     id: 2,
     image:image2,
-    title: "Natural Beauty",
+
   },
   {
     id: 3,
     image: image3,
-    title: "Bridal Glam",
   },
   {
     id: 4,
     image: image4,
-    title: "Creative Concept",
   },
   {
     id: 5,
     image: image5,
-    title: "Creative Concept",
+  },
+  {
+    id: 6,
+    image: image6,
+  },
+  {
+    id: 7,
+    image: image7,
+  },
+  {
+    id: 8,
+    image: image8,
+  },
+  {
+    id: 9,
+    image: image9,
+  },
+  {
+    id: 10,
+    image: image10,
+  },
+  {
+    id: 11,
+    image: image11,
+  },
+  {
+    id: 12,
+    image: image12,
   },
   
 ];
@@ -44,7 +75,7 @@ const Portfolio = () => {
         My Portfolio
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl w-full">
         {portfolioItems.map(({ id, image, title }) => (
           <motion.div
             key={id}
@@ -56,7 +87,7 @@ const Portfolio = () => {
             <img
               src={image}
               alt={title}
-              className="w-full h-120 object-cover transform group-hover:scale-110 transition duration-500"
+              className="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500"
             />
           </motion.div>
         ))}
