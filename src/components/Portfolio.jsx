@@ -3,28 +3,35 @@ import image1 from "../assets/IMG-20250602-WA0005.jpg"
 import image2 from "../assets/IMG-20250602-WA0007.jpg"
 import image3 from "../assets/IMG-20250602-WA0009.jpg"
 import image4 from "../assets/IMG-20250602-WA0010.jpg"
+import image5 from "../assets/IMG-20250602-WA0011.jpg"
 
 const portfolioItems = [
   {
     id: 1,
     image:image1,
-    title: "Bridal Glam",
+    title: "Editorial Style",
   },
   {
     id: 2,
     image:image2,
-    title: "Editorial Style",
+    title: "Natural Beauty",
   },
   {
     id: 3,
     image: image3,
-    title: "Natural Beauty",
+    title: "Bridal Glam",
   },
   {
     id: 4,
     image: image4,
     title: "Creative Concept",
   },
+  {
+    id: 5,
+    image: image5,
+    title: "Creative Concept",
+  },
+  
 ];
 
 const Portfolio = () => {
@@ -49,11 +56,8 @@ const Portfolio = () => {
             <img
               src={image}
               alt={title}
-              className="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500"
+              className="w-full h-120 object-cover transform group-hover:scale-110 transition duration-500"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-lg font-semibold">
-              {title}
-            </div>
           </motion.div>
         ))}
       </div>

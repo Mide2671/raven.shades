@@ -23,19 +23,19 @@ const Hero = () => {
             </a>
           </li>
           <li>
-            <a href="#portfolio" className="hover:text-pink-600 transition">
-              Portfolio
+            <a href="#services" className="hover:text-pink-600 transition">
+              Services
             </a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-pink-600 transition">
-              Book
+            <a href="#portfolio" className="hover:text-pink-600 transition">
+              Portfolio
             </a>
           </li>
         </ul>
 
         <a
-          href="#contact"
+          href="#booking"
           className="hidden md:block bg-pink-500 text-white px-5 py-2 rounded-full hover:bg-pink-600 transition"
         >
           Book Now
@@ -125,7 +125,7 @@ const Hero = () => {
             View Portfolio
           </a>
           <a
-            href="#contact"
+            href="#booking"
             className="border border-pink-600 text-pink-600 px-6 py-2 rounded-full hover:bg-pink-50 transition"
           >
             Book Now
