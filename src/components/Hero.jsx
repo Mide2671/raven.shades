@@ -4,10 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="relative h-screen bg-gradient-to-br from-pink-100 to-rose-200 overflow-hidden">
-      {/* Transparent Navbar */}
-      <nav className="absolute top-0 left-0 w-full flex justify-between items-center px-8 py-6 z-20 text-gray-800">
+      {/* Fixed Navbar */}
+      <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-8 py-6 bg-white/70 backdrop-blur-md z-50 text-gray-800 shadow-md">
         <h1 className="text-2xl font-bold tracking-wide">Raven.Shades</h1>
 
         {/* Desktop Nav */}
@@ -57,7 +58,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-20 left-0 w-full bg-white text-gray-800 flex flex-col items-center gap-4 py-6 shadow-md z-10 md:hidden"
+            className="fixed top-20 left-0 w-full bg-white text-gray-800 flex flex-col items-center gap-4 py-6 shadow-md z-40 md:hidden"
           >
             <a
               href="#home"
@@ -74,6 +75,13 @@ const Hero = () => {
               About
             </a>
             <a
+              href="#services"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-pink-600 transition"
+            >
+              Services
+            </a>
+            <a
               href="#portfolio"
               onClick={() => setIsOpen(false)}
               className="hover:text-pink-600 transition"
@@ -81,18 +89,18 @@ const Hero = () => {
               Portfolio
             </a>
             <a
-              href="#contact"
+              href="#booking"
               onClick={() => setIsOpen(false)}
-              className="hover:text-pink-600 transition"
+               className="  bg-pink-500 text-white px-5 py-2 rounded-full hover:bg-pink-600 transition"
             >
-              Book
+              Book Now
             </a>
           </motion.div>
         )}
       </AnimatePresence>
 
       {/* Hero Content */}
-      <div className="w-full h-full flex flex-col justify-center items-center text-center px-6 pt-24 md:pt-0">
+      <div className="w-full h-full flex flex-col justify-center items-center text-center px-6 pt-40">
         <motion.h1
           className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4"
           initial={{ opacity: 0, y: -20 }}

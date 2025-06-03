@@ -43,11 +43,11 @@ const About = () => {
             </div>
             <div className="flex items-center gap-2">
               <FaCamera />
-              <span>Content creation expert</span>
+              <span>Makeup artist and Content creation expert</span>
             </div>
             <div className="flex items-center gap-2">
               <FaMapMarkerAlt />
-              <span>Based in Nigeria, Lokoja, Kogi State</span>
+              <span>Based in Lokoja, Kogi State, Nigeria</span>
             </div>
           </div>
         </motion.div>
